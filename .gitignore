@@ -1,0 +1,7 @@
+# Editor directories and files
+.vscode/
+.idea/
+
+# Notes and temporary files
+g.txt
+*.log

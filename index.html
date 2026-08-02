@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohsin Ali Randhawa — Cloud Security & DevSecOps Engineer</title>
+  <meta name="description" content="Portfolio of Mohsin Ali Randhawa — Cloud & Infrastructure Engineer specializing in DevSecOps, Cloud Security, Python Automation, and full-stack development. Explore projects, skills, and experience." />
+  <meta name="keywords" content="Mohsin Ali Randhawa, DevSecOps, Cloud Security, Cloud Engineer, Portfolio, Python, DevOps, Cybersecurity" />
+  <meta name="author" content="Mohsin Ali Randhawa" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohsin Ali Randhawa — Cloud Security & DevSecOps Portfolio" />
+  <meta property="og:description" content="Cloud & Infrastructure Engineer | DevSecOps Specialist | Python Automation Enthusiast" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (shield emoji as SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Boxicons CDN -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Matrix Rain Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Particle Network Canvas -->
+  <canvas id="particles-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0.3;"></canvas>
+
+  <!-- Scan Lines Overlay -->
+  <div class="scanlines"></div>
+
+  <!-- ════════════════════════════════════════════
+       NAVIGATION
+       ════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">{</span>M<span class="logo-slash">/</span>R<span class="logo-bracket">}</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#experience">experience</a>
+        <a href="#certifications">certs</a>
+        <a href="#contact">contact</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════
+       SOCIAL SIDEBAR (Left)
+       ════════════════════════════════════════════ -->
+  <div class="social-sidebar">
+    <a href="https://github.com/MohsinAliRandhawa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i class='bx bxl-github'></i>
+    </a>
+    <a href="https://www.linkedin.com/in/mohsinalirandhawa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class='bx bxl-linkedin'></i>
+    </a>
+    <a href="mailto:hafizmohsinali64@gmail.com" aria-label="Email">
+      <i class='bx bx-envelope'></i>
+    </a>
+  </div>
+
+  <!-- EMAIL SIDEBAR (Right) -->
+  <div class="email-sidebar">
+    <a href="mailto:hafizmohsinali64@gmail.com">hafizmohsinali64@gmail.com</a>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       HERO SECTION
+       ════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            <span>Available for Opportunities</span>
+          </div>
+
+          <p class="hero-greeting">Hello World, I'm</p>
+          <h1 class="hero-name glitch-text">Mohsin Ali Randhawa</h1>
+
+          <div class="hero-title">
+            <span id="typed-text"></span><span class="typed-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate about building secure cloud infrastructure and automating everything.
+            Specializing in <strong style="color: var(--cyan);">DevSecOps</strong>,
+            <strong style="color: var(--green);">Cloud Security</strong>, and
+            <strong style="color: var(--purple);">Infrastructure as Code</strong> —
+            where security meets velocity.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class='bx bx-code-alt'></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class='bx bx-message-dots'></i> Let's Connect
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number" data-target="6" data-suffix="+">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" data-target="15" data-suffix="+">0</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" data-target="3" data-suffix="+">0</span>
+              <span class="stat-label">Domains</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+            <img src="assets/profile.jpg" alt="Mohsin Ali Randhawa — Cloud Security & DevSecOps Engineer" class="hero-image" />
+          </div>
+          <div class="hero-orbit">
+            <span class="orbit-dot"></span>
+          </div>
+          <div class="hero-orbit hero-orbit-2">
+            <span class="orbit-dot"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       ABOUT SECTION
+       ════════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who Am I</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Terminal Window -->
+        <div class="terminal-window reveal">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">mohsin@cybershield:~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command"> cat about_me.txt</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">
+                I'm a Computer Science student at the University of Narowal (2023–2027), passionate about building secure, scalable cloud infrastructure. My journey bridges the gap between development speed and security — the heart of DevSecOps.
+              </span>
+            </div>
+            <br />
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command"> echo $MISSION</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">
+                "Automate security into every pipeline. Build infrastructure that is resilient by design, not by accident."
+              </span>
+            </div>
+            <br />
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command"> whoami --verbose</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">
+                → Cloud & Infrastructure Engineering<br />
+                → Python Scripting & Automation<br />
+                → DevSecOps Pipeline Design<br />
+                → Full-Stack Application Development<br />
+                → Machine Learning & Data Science
+              </span>
+            </div>
+            <br />
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command"> _</span>
+              <span class="typed-cursor">|</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="about-info-cards">
+          <div class="info-card reveal">
+            <div class="info-card-icon">🎓</div>
+            <div class="info-card-title">EDUCATION</div>
+            <div class="info-card-text">
+              <strong>Bachelor of Computer Science</strong> — University of Narowal (2023–2027)<br />
+              <strong>Pre-Engineering (B+)</strong> — Royal College of Science
+            </div>
+          </div>
+
+          <div class="info-card reveal">
+            <div class="info-card-icon">📍</div>
+            <div class="info-card-title">LOCATION</div>
+            <div class="info-card-text">
+              Narowal, Punjab, Pakistan — Open to remote & relocation opportunities worldwide.
+            </div>
+          </div>
+
+          <div class="info-card reveal">
+            <div class="info-card-icon">🎯</div>
+            <div class="info-card-title">FOCUS AREAS</div>
+            <div class="info-card-text">
+              Cloud Security · CI/CD Pipeline Hardening · Infrastructure as Code · Container Security · Threat Modeling · Secure Architecture
+            </div>
+          </div>
+
+          <div class="info-card reveal">
+            <div class="info-card-icon">⚡</div>
+            <div class="info-card-title">FUN FACT</div>
+            <div class="info-card-text">
+              I automate everything — even my morning routine has a YAML config file. When not coding, I'm probably studying cloud attack vectors.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       SKILLS SECTION
+       ════════════════════════════════════════════ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <!-- <span class="section-label">02. Arsenal</span> -->
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">☁️</div>
+            <div class="skill-category-title">CLOUD & DEVOPS</div>
+          </div>
+          <div class="skill-items">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🔒</div>
+            <div class="skill-category-title">SECURITY</div>
+          </div>
+          <div class="skill-items">
+            <span class="skill-tag">OWASP Top 10</span>
+            <span class="skill-tag">Nmap</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Burp Suite</span>
+            <span class="skill-tag">SIEM</span>
+            <span class="skill-tag">IAM</span>
+            <span class="skill-tag">Firewalls</span>
+            <span class="skill-tag">Threat Modeling</span>
+            <span class="skill-tag">Vulnerability Assessment</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">💻</div>
+            <div class="skill-category-title">PROGRAMMING</div>
+          </div>
+          <div class="skill-items">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Kotlin</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML5/CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🛠️</div>
+            <div class="skill-category-title">FRAMEWORKS & TOOLS</div>
+          </div>
+          <div class="skill-items">
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Scikit-Learn</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Google Cloud Console</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">📱</div>
+            <div class="skill-category-title">MOBILE & DESKTOP</div>
+          </div>
+          <div class="skill-items">
+            <span class="skill-tag">Android (Kotlin)</span>
+            <span class="skill-tag">Google Maps API</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">CustomTkinter</span>
+            <span class="skill-tag">PyInstaller</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🧠</div>
+            <div class="skill-category-title">AI / ML & DATA</div>
+          </div>
+          <div class="skill-items">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Random Forest</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Data Pipelines</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Model Serialization</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       PROJECTS SECTION
+       ════════════════════════════════════════════ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <!-- <span class="section-label">// 03. Portfolio</span> -->
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Password Strength Checker (Cybersecurity) -->
+        <div class="project-card featured reveal">
+          <div class="project-card-header">
+            <div class="project-icon">🔐</div>
+            <div class="project-links">
+              <a href="https://github.com/MohsinAliRandhawa/password-strength-checker" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+              <a href="https://passwordstrengthcheckermodel.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">CyberGuard — Password Strength Checker</h3>
+            <p class="project-description">
+              A high-tech cybersecurity web application with a cyberpunk glassmorphism design. Calculates real-time password entropy, estimates brute-force cracking time with advanced math, and features a one-click secure password generator with cryptographic randomness.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Vite</span>
+              <span>CSS3</span>
+              <span>Cybersecurity</span>
+              <span>Glassmorphism</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: UON Bus Tracker -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">🚌</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">UON Bus Tracker</h3>
+            <p class="project-description">
+              Real-time GPS tracking solution for university students — track buses live on a map, view optimized routes, and receive emergency notifications. Features a "Nearest Stop" finder and accurate ETA data to minimize student wait times.
+            </p>
+            <div class="project-tech">
+              <span>Android</span>
+              <span>Kotlin</span>
+              <span>Google Maps API</span>
+              <span>GPS</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Complaint Manager -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">📋</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Complaint Manager — Al-Shaikh Cooling Point</h3>
+            <p class="project-description">
+              Custom mobile solution to digitize manual register-based complaint management. Built a structured database with search filters for efficient tracking. Integrated Google Cloud Console for automated, compressed data backups to Google Drive.
+            </p>
+            <div class="project-tech">
+              <span>Android</span>
+              <span>Kotlin</span>
+              <span>Google Cloud</span>
+              <span>Firebase</span>
+              <span>SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Laptop Price Predictor -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">🤖</div>
+            <div class="project-links">
+              <a href="https://github.com/MohsinAliRandhawa/Laptop-Price-Predictor" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+              <a href="https://laptoppricepredictormodel.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Laptop Price Predictor — ML Pipeline</h3>
+            <p class="project-description">
+              End-to-end MLOps pipeline — Random Forest model trained on 5,480 global listings across 5 international datasets. Features 19 engineered features, live USD→PKR currency conversion via REST API, confidence intervals, and price tier classification.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Scikit-Learn</span>
+              <span>Streamlit</span>
+              <span>Pandas</span>
+              <span>MLOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Bhatti Travels Website -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">✈️</div>
+            <div class="project-links">
+              <a href="https://github.com/MohsinAliRandhawa/Bhatti-Travels-Website" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Bhatti Travels — B2B Flight Booking Engine</h3>
+            <p class="project-description">
+              Robust B2B flight booking engine with multi-API integration, smart deduplication algorithm, secure admin dashboard with authentication, automated background API sync via cron jobs, and enterprise-grade security with config isolation outside webroot.
+            </p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+              <span>Apache</span>
+              <span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Python Compiler Visualizer -->
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <div class="project-icon">⚙️</div>
+            <div class="project-links">
+              <a href="https://github.com/MohsinAliRandhawa/Python-Compiler-Visualizer" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Python Compiler & AST Visualizer</h3>
+            <p class="project-description">
+              Modern standalone desktop application to write, compile, and visualize Python code execution in real-time. Features a sleek dark-mode IDE UI, smart file management with unsaved changes protection, and live output visualization.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>CustomTkinter</span>
+              <span>C++</span>
+              <span>PyInstaller</span>
+              <span>AST</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       EXPERIENCE & EDUCATION TIMELINE
+       ════════════════════════════════════════════ -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Journey</span>
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Timeline 1: Education BCS -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2027 (Expected)</span>
+            <h3 class="timeline-title">Bachelor of Computer Science</h3>
+            <p class="timeline-subtitle">University of Narowal</p>
+            <p class="timeline-text">
+              Studying core CS fundamentals with a focus on cloud computing, cybersecurity, and software engineering. Building real-world projects and contributing to open source.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline 2: Complaint Manager Project -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Mar 2026</span>
+            <h3 class="timeline-title">Complaint Manager — Mobile App</h3>
+            <p class="timeline-subtitle">Al-Shaikh Cooling Point (Freelance)</p>
+            <p class="timeline-text">
+              Designed & deployed a custom Kotlin Android app to digitize complaint management. Integrated Google Cloud Console for automated backups, ensuring data recovery and security across devices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline 3: UON Bus Tracker -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan — Feb 2026</span>
+            <h3 class="timeline-title">UON Bus Tracker — GPS App</h3>
+            <p class="timeline-subtitle">University of Narowal (Academic)</p>
+            <p class="timeline-text">
+              Built a real-time GPS tracking mobile app for university buses. Implemented live map tracking, route optimization, emergency notifications, and accurate ETA calculation for 500+ students.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline 4: Bhatti Travels -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — 2026</span>
+            <h3 class="timeline-title">B2B Flight Booking Engine</h3>
+            <p class="timeline-subtitle">Bhatti Travels Agency (Freelance)</p>
+            <p class="timeline-text">
+              Built a full-featured B2B flight booking platform with multi-API integration, smart deduplication, secure admin dashboard, and enterprise-grade security architecture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline 5: Pre-Engineering -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Completed</span>
+            <h3 class="timeline-title">Associate's Degree — Pre-Engineering</h3>
+            <p class="timeline-subtitle">Royal College of Science</p>
+            <p class="timeline-text">
+              Completed pre-engineering track with B+ grade. Built strong foundations in mathematics, physics, and analytical problem-solving.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       CERTIFICATIONS SECTION
+       ════════════════════════════════════════════ -->
+  <section class="certifications" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Credentials</span>
+        <h2 class="section-title">Certifications & Learning</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-info">
+            <h4>Cloud Computing Fundamentals</h4>
+            <p>AWS / Azure / GCP — Self-Directed Learning</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔒</div>
+          <div class="cert-info">
+            <h4>Cybersecurity Foundations</h4>
+            <p>OWASP · Network Security · Ethical Hacking</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🐍</div>
+          <div class="cert-info">
+            <h4>Python for DevOps & Automation</h4>
+            <p>Scripting · CI/CD · Infrastructure Automation</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-info">
+            <h4>Machine Learning with Scikit-Learn</h4>
+            <p>Supervised Learning · Feature Engineering · MLOps</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       CONTACT SECTION
+       ════════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Build Something <span style="color: var(--cyan);">Secure</span> Together</h3>
+          <p>
+            I'm actively seeking internship and job opportunities in Cloud Engineering, DevSecOps, and Cybersecurity.
+            Whether you have a question, a project idea, or just want to connect — my inbox is always open.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📧</div>
+            <div class="contact-detail-text">
+              <h4>Email</h4>
+              <p><a href="mailto:hafizmohsinali64@gmail.com">hafizmohsinali64@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <h4>Location</h4>
+              <p>Narowal, Punjab, Pakistan</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">💼</div>
+            <div class="contact-detail-text">
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/mohsinalirandhawa/" target="_blank" rel="noopener noreferrer">mohsinalirandhawa</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🐙</div>
+            <div class="contact-detail-text">
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/MohsinAliRandhawa" target="_blank" rel="noopener noreferrer">MohsinAliRandhawa</a></p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Moon Bhy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Moon Bhy'" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="moon@example.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'moon@example.com'" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Let's collaborate!" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Let\'s collaborate!'" />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tell me about your project or opportunity...'" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <i class='bx bx-send'></i> Send_Message()
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          <span>&lt;/&gt;</span> Designed & Built by <span>Mohsin Ali Randhawa</span> | © 2026
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/MohsinAliRandhawa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/mohsinalirandhawa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="mailto:hafizmohsinali64@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
