@@ -1,9 +1,9 @@
-# Mohsin Ali Randhawa — CyberShield Portfolio 🛡️
+# Mohsin Ali Randhawa —  Portfolio 🛡️
 
-Welcome to the source code for my personal portfolio website! This project is designed with a dark, glassmorphic "CyberShield" aesthetic to reflect my focus on **Cloud Security**, **DevSecOps**, and **Python Automation**.
+Welcome to the source code for my personal portfolio website! This project is designed with a dark, glassmorphic aesthetic to reflect my focus on **Cloud Security**, **DevSecOps**, and **Python Automation**.
 
 ## 🌐 Live Demo
-*(Add your GitHub Pages link here once deployed, e.g., https://MohsinAliRandhawa.github.io/Portfolio)*
+https://mohsinalirandhawa.vercel.app
 
 ## 🚀 Technologies Used
 * **HTML5:** Semantic structure for optimal SEO and accessibility.
