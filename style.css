@@ -78,6 +78,10 @@ body {
   position: relative;
 }
 
+p, .terminal-output, .project-description, .timeline-text, .info-card-text {
+  text-align: justify;
+}
+
 body::before {
   content: '';
   position: fixed;
