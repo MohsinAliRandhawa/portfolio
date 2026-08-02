@@ -1537,6 +1537,10 @@ section {
     font-size: 2.2rem;
   }
 
+  .hero-title {
+    font-size: 1.05rem;
+  }
+
   section {
     padding: 70px 0;
   }
@@ -1590,14 +1594,21 @@ section {
     font-size: 1.8rem;
   }
 
+  .hero-title {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
   .hero-image-container {
     width: 220px;
     height: 220px;
   }
 
   .hero-stats {
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
   }
 
   .btn {
